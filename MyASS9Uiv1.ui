@@ -1,0 +1,1444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1167</width>
+    <height>776</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout_5">
+    <item row="0" column="1">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab_loading">
+       <attribute name="title">
+        <string>Image Loading</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+         <widget class="QGroupBox" name="groupBox">
+          <property name="title">
+           <string/>
+          </property>
+          <layout class="QGridLayout" name="gridLayout">
+           <item row="0" column="0">
+            <widget class="QGroupBox" name="groupBox_2">
+             <property name="maximumSize">
+              <size>
+               <width>600</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="title">
+              <string>Image Information</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout">
+              <item>
+               <widget class="QGroupBox" name="groupBox_3">
+                <property name="title">
+                 <string>All Types</string>
+                </property>
+                <widget class="QWidget" name="layoutWidget">
+                 <property name="geometry">
+                  <rect>
+                   <x>12</x>
+                   <y>31</y>
+                   <width>491</width>
+                   <height>251</height>
+                  </rect>
+                 </property>
+                 <layout class="QGridLayout" name="gridLayout_3">
+                  <item row="0" column="0">
+                   <layout class="QVBoxLayout" name="verticalLayout_2">
+                    <item>
+                     <widget class="QLabel" name="ImageWidth_label">
+                      <property name="text">
+                       <string>Image Width: </string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="ImageHeight_label">
+                      <property name="text">
+                       <string>Image Height: </string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="BitDepth_label">
+                      <property name="text">
+                       <string>Bit depth (bit/pixel): </string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="ImageColor_label">
+                      <property name="text">
+                       <string>Image Color: </string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="ImageSize_label">
+                      <property name="text">
+                       <string>Image Total size in bits: </string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item row="0" column="1">
+                   <layout class="QVBoxLayout" name="verticalLayout_3">
+                    <item>
+                     <widget class="QLabel" name="IWdisplay_label">
+                      <property name="text">
+                       <string>TextLabel</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="IHdisplay_label">
+                      <property name="text">
+                       <string>TextLabel</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="BDdisplay_label">
+                      <property name="text">
+                       <string>TextLabel</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="ICdisplay_label">
+                      <property name="text">
+                       <string>TextLabel</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="ISdisplay_label">
+                      <property name="text">
+                       <string>TextLabel</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+              <item>
+               <widget class="QGroupBox" name="groupBox_4">
+                <property name="title">
+                 <string>Dicom Only</string>
+                </property>
+                <widget class="QWidget" name="layoutWidget">
+                 <property name="geometry">
+                  <rect>
+                   <x>10</x>
+                   <y>30</y>
+                   <width>491</width>
+                   <height>251</height>
+                  </rect>
+                 </property>
+                 <layout class="QHBoxLayout" name="horizontalLayout">
+                  <item>
+                   <layout class="QVBoxLayout" name="verticalLayout_4">
+                    <item>
+                     <widget class="QLabel" name="ModalityUsed_label">
+                      <property name="text">
+                       <string>Modality used: </string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="label_2">
+                      <property name="text">
+                       <string>Patient name: </string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="label_3">
+                      <property name="text">
+                       <string>Patient Age: </string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="label_4">
+                      <property name="text">
+                       <string>Body part examined: </string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                  <item>
+                   <layout class="QVBoxLayout" name="verticalLayout_5">
+                    <item>
+                     <widget class="QLabel" name="MUdisplay_label">
+                      <property name="text">
+                       <string>TextLabel</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="PNdisplay_label">
+                      <property name="text">
+                       <string>TextLabel</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="PAdisplay_label">
+                      <property name="text">
+                       <string>TextLabel</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="BPdisplay_label">
+                      <property name="text">
+                       <string>TextLabel</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </item>
+                 </layout>
+                </widget>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QGroupBox" name="groupBox_5">
+             <property name="title">
+              <string>Image Display</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_4">
+              <item row="0" column="0">
+               <widget class="QLabel" name="ImageDisplay_label">
+                <property name="maximumSize">
+                 <size>
+                  <width>1200</width>
+                  <height>800</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>TextLabel</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_zooming">
+       <attribute name="title">
+        <string>Zooming</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_16">
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="gridLayout_6">
+          <item row="0" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <item>
+             <widget class="QLabel" name="Zooming_Factor_label">
+              <property name="text">
+               <string>Zooming Factor: </string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit"/>
+            </item>
+            <item>
+             <widget class="QLabel" name="H_label">
+              <property name="text">
+               <string>New H: </string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="H_display_label">
+              <property name="text">
+               <string>NA</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label">
+              <property name="text">
+               <string>New W: </string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="W_display_label">
+              <property name="text">
+               <string>NA</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="CheckToHide_label">
+              <property name="text">
+               <string>Check to Hide: </string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="checkBox_nearest">
+              <property name="text">
+               <string>Nearest</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="checkBox_linear">
+              <property name="maximumSize">
+               <size>
+                <width>2000</width>
+                <height>200</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Linear</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="1" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <item>
+             <spacer name="verticalSpacer">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Expanding</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>100</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QSplitter" name="splitter">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <widget class="QGroupBox" name="groupBox_6">
+               <property name="title">
+                <string>Nearest Neighbor Interpolation</string>
+               </property>
+               <layout class="QGridLayout" name="gridLayout_7">
+                <item row="0" column="0">
+                 <widget class="QLabel" name="Nearest_ImageDisplay">
+                  <property name="maximumSize">
+                   <size>
+                    <width>1200</width>
+                    <height>800</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string>Add Zooming factor</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+              <widget class="QGroupBox" name="groupBox_7">
+               <property name="title">
+                <string>Linear Interpolation</string>
+               </property>
+               <layout class="QGridLayout" name="gridLayout_8">
+                <item row="0" column="0">
+                 <widget class="QLabel" name="Linear_ImageDisplay">
+                  <property name="maximumSize">
+                   <size>
+                    <width>1200</width>
+                    <height>800</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string>Add Zooming Factor</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacer_2">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Expanding</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>100</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_transformation">
+       <attribute name="title">
+        <string>Transformation</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_9">
+        <item row="0" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout_7">
+          <item>
+           <widget class="QLabel" name="Input_Angle_label">
+            <property name="text">
+             <string>Input The Angle: </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="Angle_lineEdit"/>
+          </item>
+          <item>
+           <widget class="QLabel" name="Sheering_label">
+            <property name="text">
+             <string>Angle of Shearing</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="radioButton_positive">
+            <property name="text">
+             <string>45 deg</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QRadioButton" name="radioButton_negative">
+            <property name="text">
+             <string>-45 deg</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_2">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>110</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="Choose_Interpolation_label">
+            <property name="text">
+             <string>Choose Interpolation Type: </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboBox">
+            <item>
+             <property name="text">
+              <string>Nearest Neighbor</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Bi Linear</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>120</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="NewImageAngle_label">
+            <property name="text">
+             <string>New Image Angle: </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="NewImageAngle_label_display">
+            <property name="text">
+             <string>NA</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_3">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="NewImageDirection_label">
+            <property name="text">
+             <string>New Image Direction: </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="NewImageDirection_label_display">
+            <property name="text">
+             <string>NA</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item row="1" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout_8">
+          <item>
+           <spacer name="verticalSpacer_5">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Expanding</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>100</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QSplitter" name="splitter_3">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <widget class="QGroupBox" name="before_transformation_groupBox">
+             <property name="title">
+              <string>Before</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_17">
+              <item row="0" column="0">
+               <widget class="MplWidget" name="before"/>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QGroupBox" name="after_transformation_groupBox">
+             <property name="title">
+              <string>After</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_18">
+              <item row="0" column="0">
+               <widget class="MplWidget" name="after"/>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+          <item>
+           <spacer name="verticalSpacer_6">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+            <property name="sizeType">
+             <enum>QSizePolicy::Expanding</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>20</width>
+              <height>100</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_Histogram">
+       <attribute name="title">
+        <string>Histogram Equalization</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_10">
+        <item row="0" column="0">
+         <widget class="QGroupBox" name="Original_Image_groupBox">
+          <property name="title">
+           <string>Original Image</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_20">
+           <item row="0" column="0">
+            <widget class="MplWidget" name="Original_Image_display"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QGroupBox" name="Original_Histogram_groupBox">
+          <property name="title">
+           <string>Original Image Normalized Histogram</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_19">
+           <item row="0" column="0">
+            <widget class="MplWidget" name="Original_Histogram_display"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QGroupBox" name="Equalized_Image_groupBox">
+          <property name="title">
+           <string>Equalized Image</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_22">
+           <item row="0" column="0">
+            <widget class="MplWidget" name="Equalized_Image_display"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QGroupBox" name="Equalized_Histogram_groupBox">
+          <property name="title">
+           <string>Equalized Image Normalized Histogram</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_23">
+           <item row="0" column="0">
+            <widget class="MplWidget" name="Equalized_Histogram_display"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_SpatialFiltering">
+       <attribute name="title">
+        <string>Spatial Filtering</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_13">
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="gridLayout_12">
+          <item row="0" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_4">
+            <item>
+             <widget class="QLabel" name="Kernel_Size_label">
+              <property name="text">
+               <string>Box filter Kernel size:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="Kernel_Size_lineEdit"/>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_4">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>80</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QLabel" name="Multiplication_Factor_label">
+              <property name="text">
+               <string>Multiplication Factor: </string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="Multiplication_Factor_lineEdit"/>
+            </item>
+           </layout>
+          </item>
+          <item row="1" column="0">
+           <layout class="QGridLayout" name="gridLayout_11">
+            <item row="0" column="0">
+             <widget class="QGroupBox" name="Original_Image_SpatialFilter_groupBox">
+              <property name="title">
+               <string>Original Image</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_26">
+               <item row="0" column="0">
+                <widget class="MplWidget" name="Original_Image_SpatialFilter_display"/>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QGroupBox" name="Enhanced_Original_Image_SpatialFilter_groupBox">
+              <property name="title">
+               <string>Enhanced Original Image</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_21">
+               <item row="0" column="0">
+                <widget class="MplWidget" name="Enhanced_Original_Image_SpatialFilter_display"/>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="1" column="0">
+             <widget class="QGroupBox" name="Noisy_Image_SpatialFilter_groupBox">
+              <property name="title">
+               <string>Original Image After Adding Salt and Peper Noise</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_24">
+               <item row="0" column="0">
+                <widget class="MplWidget" name="Noisy_Image_SpatialFilter_display"/>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QGroupBox" name="NonNoisy_Image_SpatialFilter_groupBox">
+              <property name="title">
+               <string>Original Image After Removing Salt and Peper Noise</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_25">
+               <item row="0" column="0">
+                <widget class="MplWidget" name="NonNoisy_Image_SpatialFilter_display"/>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Fourier Domain</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_30">
+        <item row="0" column="0">
+         <widget class="QGroupBox" name="Original_image_fourierdomain_groupBox">
+          <property name="title">
+           <string>Original Image</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_29">
+           <item row="0" column="0">
+            <widget class="MplWidget" name="Original_image_fourierdomain_display"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QGroupBox" name="magnitudebeforelog_image_fourierdomain_groupBox">
+          <property name="title">
+           <string>Magnitude Before log</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_15">
+           <item row="0" column="0">
+            <widget class="MplWidget" name="magnitudebeforelog_image_fourierdomain_display"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QGroupBox" name="phasebeforelog_image_fourierdomain_groupBox">
+          <property name="title">
+           <string>Phase Before log</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_14">
+           <item row="0" column="0">
+            <widget class="MplWidget" name="phasebeforelog_image_fourierdomain_display"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QGroupBox" name="magnitudeafterlog_image_fourierdomain_groupBox">
+          <property name="title">
+           <string>Magnitude After log</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_27">
+           <item row="0" column="0">
+            <widget class="MplWidget" name="magnitudeafterlog_image_fourierdomain_display"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QGroupBox" name="phaseafterlog_image_fourierdomain_groupBox">
+          <property name="title">
+           <string>Phase After log</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_28">
+           <item row="0" column="0">
+            <widget class="MplWidget" name="phaseafterlog_image_fourierdomain_display"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Fourier Filtering</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_36">
+        <item row="1" column="0">
+         <layout class="QGridLayout" name="gridLayout_35">
+          <item row="0" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_6">
+            <item>
+             <widget class="QGroupBox" name="Original_Image_FourierFiltering_groupBox">
+              <property name="title">
+               <string>Original Image</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_32">
+               <item row="0" column="0">
+                <widget class="MplWidget" name="Original_Image_FourierFiltering_display"/>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QGroupBox" name="Filtered_Image_FourierFiltering_groupBox">
+              <property name="title">
+               <string>Filtered Image In Fourier Domain</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_31">
+               <item row="0" column="0">
+                <widget class="MplWidget" name="Filtered_Image_FourierFiltering_display"/>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item row="1" column="0">
+           <layout class="QHBoxLayout" name="horizontalLayout_9">
+            <item>
+             <widget class="QGroupBox" name="Diff_fromspatiaandfourier_FourierFiltering_groupBox">
+              <property name="title">
+               <string>Diff. Bet. Fourier and Spatial Domain Filtering</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_33">
+               <item row="0" column="0">
+                <widget class="MplWidget" name="Diff_fromspatiaandfourier_FourierFiltering_display"/>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QGroupBox" name="PeriodicNoiseRemoval_FourierFiltering_groupBox">
+              <property name="title">
+               <string>Periodic Noise Removal</string>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_34">
+               <item row="0" column="0">
+                <widget class="MplWidget" name="PeriodicNoiseRemoval_FourierFiltering_display"/>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item row="0" column="0">
+         <layout class="QHBoxLayout" name="horizontalLayout_5">
+          <item>
+           <widget class="QLabel" name="kernelSize_FourierFiltering_label">
+            <property name="maximumSize">
+             <size>
+              <width>100</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>kernel Size: </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="kernelSize_FourierFiltering_lineEdit">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>100</width>
+              <height>16777215</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="DifferenceComment_label">
+            <property name="maximumSize">
+             <size>
+              <width>140</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>Difference Comment: </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="Comment_label_Display">
+            <property name="text">
+             <string>N/A</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>Noise Filtering</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_41">
+        <item row="0" column="0">
+         <widget class="QGroupBox" name="CreatedImage_NoiseFiltering_groupBox">
+          <property name="title">
+           <string>Created Image</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_37">
+           <item row="0" column="0">
+            <widget class="MplWidget" name="CreatedImage_NoiseFiltering_display"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QGroupBox" name="Utilites_NoiseFiltering_groupBox">
+          <property name="title">
+           <string>Utilities</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_40">
+           <item row="0" column="0">
+            <layout class="QHBoxLayout" name="horizontalLayout_10">
+             <item>
+              <widget class="QLabel" name="ChooseNoiseType_NoiseFIltering_label">
+               <property name="text">
+                <string>Choose Noise Type: </string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QComboBox" name="ChooseNoiseType_NoiseFIltering_comboBox">
+               <item>
+                <property name="text">
+                 <string>N/A</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Uniform</string>
+                </property>
+               </item>
+               <item>
+                <property name="text">
+                 <string>Gaussian</string>
+                </property>
+               </item>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item row="1" column="0">
+            <spacer name="verticalSpacer_3">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Expanding</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>10</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="2" column="0">
+            <widget class="QPushButton" name="ChooseROIRegion_NoiseFiltering_pushButton">
+             <property name="text">
+              <string>Choose ROI Region</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <spacer name="verticalSpacer_4">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Expanding</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>10</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="4" column="0">
+            <layout class="QHBoxLayout" name="horizontalLayout_13">
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_12">
+               <item>
+                <widget class="QLabel" name="ROISD_NoiseFiltering_label">
+                 <property name="text">
+                  <string>ROI S.d: </string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="ROISD_NoiseFiltering_label_display">
+                 <property name="text">
+                  <string>N/A</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_11">
+               <item>
+                <widget class="QLabel" name="ROIMean_NoiseFiltering_label">
+                 <property name="text">
+                  <string>ROI Mean: </string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="ROIMean_NoiseFiltering_label_display">
+                 <property name="text">
+                  <string>N/A</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QGroupBox" name="ImageAfterNoise_NoiseFiltering_groupBox">
+          <property name="title">
+           <string>Image After Noise</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_38">
+           <item row="0" column="0">
+            <widget class="MplWidget" name="ImageAfterNoise_NoiseFiltering_display"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QGroupBox" name="ROIHistogram_NoiseFiltering_groupBox">
+          <property name="title">
+           <string>ROI Histogram</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_39">
+           <item row="0" column="0">
+            <widget class="MplWidget" name="ROIHistogram_NoiseFiltering_display"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_4">
+       <attribute name="title">
+        <string>Back Projection</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_48">
+        <item row="0" column="0">
+         <widget class="QGroupBox" name="phantomImage_BackProjection_groupBox">
+          <property name="title">
+           <string>Schepp-Logan phantom</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_42">
+           <item row="0" column="0">
+            <widget class="MplWidget" name="phantomImage_BackProjection_display"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QGroupBox" name="phantomSinogram_BackProjection_groupBox">
+          <property name="title">
+           <string>Sinogram of Schepp-Logan phantom</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_43">
+           <item row="0" column="0">
+            <widget class="MplWidget" name="phantomSinogram_BackProjection_display"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QGroupBox" name="phantomlaminogram_NoFilter_specificAngles_BackProjection_groupBox">
+          <property name="title">
+           <string>Laminogram No Filter Angles[0,20,40,60,160]</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_44">
+           <item row="0" column="0">
+            <widget class="MplWidget" name="phantomlaminogram_NoFilter_specificAngles_BackProjection_display"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QGroupBox" name="phantomlaminogram_NoFilter_allAngles_BackProjection_groupBox">
+          <property name="title">
+           <string>Laminogram No Filter Angles[0-180]</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_45">
+           <item row="0" column="0">
+            <widget class="MplWidget" name="phantomlaminogram_NoFilter_allAngles_BackProjection_display"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QGroupBox" name="phantomlaminogram_RamlakFilter_allAngles_BackProjection_groupBox">
+          <property name="title">
+           <string>Laminogram Ram-Lak Filter Angles[0-180]</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_46">
+           <item row="0" column="0">
+            <widget class="MplWidget" name="phantomlaminogram_RamlakFilter_allAngles_BackProjection_display"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="2">
+         <widget class="QGroupBox" name="phantomlaminogram_HammingFilter_allAngles_BackProjection_groupBox">
+          <property name="title">
+           <string>Laminogram Hamming Filter Angles[0-180]</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_47">
+           <item row="0" column="0">
+            <widget class="MplWidget" name="phantomlaminogram_HammingFilter_allAngles_BackProjection_display"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_5">
+       <attribute name="title">
+        <string>Morphology</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_51">
+        <item row="0" column="0" colspan="2">
+         <layout class="QHBoxLayout" name="horizontalLayout_14">
+          <item>
+           <widget class="QLabel" name="StructuralElement_Morphology_Label">
+            <property name="text">
+             <string>Structural Element Size:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="StructuralElement_Morphology_LineEdit">
+            <property name="maximumSize">
+             <size>
+              <width>100</width>
+              <height>16777215</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_7">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="StructuralElementShape_Morphology_Label">
+            <property name="text">
+             <string>Structural Element Shape: </string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="chooseSEshape_Morphology_ComboBox">
+            <item>
+             <property name="text">
+              <string>Cross</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Square</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_6">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QLabel" name="ChooseMorphologyType_Morphology_Label">
+            <property name="text">
+             <string>Choose Morphology Type:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="chooseMorphologyType_Morphology_ComboBox">
+            <item>
+             <property name="text">
+              <string>Choose Morphology</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Erosion</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Dilation</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Opening</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Closing</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>Noise Filter</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer_5">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>326</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+         </layout>
+        </item>
+        <item row="1" column="0">
+         <widget class="QGroupBox" name="ImageBefore_Morphologhy_groupBox">
+          <property name="title">
+           <string>Before</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_49">
+           <item row="0" column="0">
+            <widget class="MplWidget" name="ImageBefore_Morphologhy_display"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QGroupBox" name="ImageAfter_Morphologhy_groupBox">
+          <property name="title">
+           <string>After</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_50">
+           <item row="0" column="0">
+            <widget class="MplWidget" name="ImageAfter_Morphologhy_display"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1167</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionBrowse_Image"/>
+   </widget>
+   <widget class="QMenu" name="menuRun">
+    <property name="title">
+     <string>Run</string>
+    </property>
+    <addaction name="actionHistogram_Equalization"/>
+    <addaction name="actionSmoothing_Filter"/>
+    <addaction name="actionMedian_Filter_Salt_and_Pepper"/>
+    <addaction name="actionFourier_Domain"/>
+    <addaction name="actionFiltered_Image_Fourier_and_Difference"/>
+    <addaction name="actionPeriodic_Noise_Removal"/>
+    <addaction name="actionNoise_Filtering"/>
+    <addaction name="actionBack_Projection"/>
+    <addaction name="actionMorphological_operations"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuRun"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionBrowse_Image">
+   <property name="text">
+    <string>Browse Image</string>
+   </property>
+  </action>
+  <action name="actionHistogram_Equalization">
+   <property name="text">
+    <string>Histogram Equalization</string>
+   </property>
+  </action>
+  <action name="actionSmoothing_Filter">
+   <property name="text">
+    <string>Smoothing Filter</string>
+   </property>
+  </action>
+  <action name="actionMedian_Filter_Salt_and_Pepper">
+   <property name="text">
+    <string>Median Filter (Salt and Pepper)</string>
+   </property>
+  </action>
+  <action name="actionFourier_Domain">
+   <property name="text">
+    <string>Fourier Domain</string>
+   </property>
+  </action>
+  <action name="actionFiltered_Image_Fourier_and_Difference">
+   <property name="text">
+    <string>Filtered Image Fourier and Difference </string>
+   </property>
+  </action>
+  <action name="actionPeriodic_Noise_Removal">
+   <property name="text">
+    <string>Periodic Noise Removal</string>
+   </property>
+  </action>
+  <action name="actionNoise_Filtering">
+   <property name="text">
+    <string>Noise Filtering</string>
+   </property>
+  </action>
+  <action name="actionBack_Projection">
+   <property name="text">
+    <string>Back Projection</string>
+   </property>
+  </action>
+  <action name="actionMorphological_operations">
+   <property name="text">
+    <string>Morphological operations</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>MplWidget</class>
+   <extends>QGraphicsView</extends>
+   <header location="global">mplwidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
