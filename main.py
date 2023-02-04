@@ -368,6 +368,8 @@ class MainWindow(QtWidgets.QMainWindow):
                     #self.newdimention=int(self.greyImageArray.shape[0]*self.factor)
                     self.newXdimention=round(self.greyImageArray.shape[0]*self.factor)
                     self.newYdimention=round(self.greyImageArray.shape[1]*self.factor)
+                    self.ui.H_display_label.setText(str(self.newXdimention))
+                    self.ui.W_display_label.setText(str(self.newYdimention))
                     #self.nearest_interpolation()
                     self.nearest_Interpolation()
                     self.linear_Interpolation()
